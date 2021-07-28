@@ -29,9 +29,10 @@ public class EmailService {
     private final JavaMailSender mailSender;
 
     /**
-     * Send email.
+     * Send email email.
      *
      * @param email the email
+     * @return the email
      */
     public Email sendEmail(Email email) {
 

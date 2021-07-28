@@ -14,14 +14,26 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
+/**
+ * The type Email controller.
+ */
 @AllArgsConstructor
 @RestController
 @RequestMapping("ms-email")
 public class EmailController {
 
+    /**
+     * The Email service.
+     */
     private final EmailService emailService;
 
 
+    /**
+     * Send email response entity.
+     *
+     * @param emailDTO the email dto
+     * @return the response entity
+     */
     @PostMapping("/send")
     public ResponseEntity<Email> sendEmail(@RequestBody @Valid EmailDTO emailDTO) {
 
