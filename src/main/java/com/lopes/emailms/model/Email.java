@@ -31,6 +31,11 @@ public class Email {
     private Long emailId;
 
     /**
+     * The Owner ref.
+     */
+    private String ownerRef;
+
+    /**
      * The Email from.
      */
     private String emailFrom;
