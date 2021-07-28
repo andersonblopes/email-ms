@@ -27,7 +27,7 @@ public class EmailController {
 
         Email email = new Email();
         BeanUtils.copyProperties(emailDTO, email); // Convert DTO to entity
-        emailService.sendEmail(email);
+        email = emailService.sendEmail(email);
 
         return new ResponseEntity<>(email, HttpStatus.CREATED);
     }

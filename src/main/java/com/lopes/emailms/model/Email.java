@@ -4,7 +4,7 @@ import com.lopes.emailms.enumerations.StatusEmail;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.CreatedDate;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -60,7 +60,7 @@ public class Email {
     /**
      * The Send date email.
      */
-    @CreatedDate
+    @CreationTimestamp
     private OffsetDateTime sendDateEmail;
 
     /**
